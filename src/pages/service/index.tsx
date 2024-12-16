@@ -13,7 +13,7 @@ export const ServicePage = () => {
                 color={theme.palette.text.primary}
             >
                 <Container maxWidth="md">
-                    <Typography variant="h2" gutterBottom>
+                    <Typography variant="h2" gutterBottom fontFamily="high">
                         Sound Design Services
                     </Typography>
                     <Typography variant="h6" gutterBottom>
@@ -27,14 +27,14 @@ export const ServicePage = () => {
             </Grid2>
 
             <Grid2 paddingTop={10}>
-                <Typography variant="h4" align="center" paddingBottom={10}>
+                <Typography variant="h4" align="center" paddingBottom={10} fontFamily="lostar">
                     Our Services
                 </Typography>
                 <Grid2 container spacing={4} justifyContent="center">
                     {cardServices.map(({img, title, label, desc}) => (
                         <Grid2>
-                            <Card sx={{maxWidth: 345, margin: "auto"}}>
-                                <CardMedia sx={{height: 140}} image={img} title={title}/>
+                            <Card sx={{maxWidth: 345, height: 300, margin: "auto"}}>
+                                <CardMedia sx={{height: 200}} image={img} title={title}/>
                                 <CardContent>
                                     <Typography variant="h5" gutterBottom>{label}</Typography>
                                     <Typography variant="body2">{desc}</Typography>
@@ -46,7 +46,7 @@ export const ServicePage = () => {
             </Grid2>
 
             <Grid2 padding={10}>
-                <Typography variant="h4" paddingBottom={10} align="center">
+                <Typography variant="h4" paddingBottom={5} align="center" fontFamily="lostar">
                     Our Process
                 </Typography>
 
@@ -71,10 +71,10 @@ export const ServicePage = () => {
                 }}
             >
                 <Container maxWidth="sm">
-                    <Typography variant="h4" gutterBottom>
+                    <Typography variant="h2" gutterBottom fontFamily="high">
                         Ready to Get Started?
                     </Typography>
-                    <Typography variant="body1" gutterBottom>
+                    <Typography variant="body1" gutterBottom >
                         Contact us today to discuss your project and see how we can help.
                     </Typography>
                     <Button variant="contained" size="large">

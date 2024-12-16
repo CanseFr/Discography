@@ -55,7 +55,7 @@ export const TopBar = () => {
                                     mr: 2,
                                     display: {xs: 'none', md: 'flex'},
                                     fontSize: "3rem",
-                                    fontFamily: "groovy",
+                                    fontFamily: "lostar",
                                     fontWeight: 700,
                                     letterSpacing: '.3rem',
                                     color: 'inherit',

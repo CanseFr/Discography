@@ -3,8 +3,19 @@
 }
 
 @font-face {
-    font-family: 'groovy';
-    src: url('./assets/fonts/Sweet_Shine.ttf') format('truetype');
+    font-family: 'lostar';
+    src: url('./assets/fonts/Lostar.ttf') format('truetype');
 }
+
+@font-face {
+    font-family: 'high';
+    src: url('./assets/fonts/high.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'jmh';
+    src: url('./assets/fonts/jmh.ttf') format('truetype');
+}
+
 
 
