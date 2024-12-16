@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'groovy';
+    src: url('./assets/fonts/Sweet_Shine.ttf') format('truetype');
+}
+
+
