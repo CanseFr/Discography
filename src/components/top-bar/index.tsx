@@ -89,7 +89,6 @@ export const TopBar = () => {
                     </Toolbar>
                 </Container>
             </AppBar>
-            <Outlet/>
         </>
     )
 }

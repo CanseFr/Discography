@@ -9,12 +9,13 @@ import {DiscographyPage} from "./pages/discography";
 import {SamplePackPage} from "./pages/sample-pack";
 import {AboutPage} from "./pages/about";
 import {ServicePage} from "./pages/service";
+import {MainLayout} from "./components/layout/main-layout.tsx";
 
 createRoot(document.getElementById('root')!).render(
     <ThemeProvider theme={theme}>
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<TopBar/>}>
+                <Route path="/" element={<MainLayout/>}>
                     <Route index element={<Home/>}/>
                     <Route path="disco" element={<DiscographyPage/>}/>
                     <Route path="sample" element={<SamplePackPage/>}/>
