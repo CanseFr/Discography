@@ -1,4 +1,3 @@
-import {Outlet} from "react-router";
 // import NightlightIcon from '@mui/icons-material/Nightlight';
 // import WbSunnyIcon from '@mui/icons-material/WbSunny';
 import AppBar from '@mui/material/AppBar';
@@ -7,10 +6,11 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
-import {Grid2} from "@mui/material";
+import {Grid2, Switch} from "@mui/material";
 import FormControlLabel from '@mui/material/FormControlLabel';
-import Switch from '@mui/material/Switch';
 import {useColorScheme} from '@mui/material/styles';
+import {Outlet} from "react-router";
+import {ChangeEvent} from "react";
 
 const pages = ['Discographie', 'Sample Pack', 'Service', 'About'];
 const link = ['disco', 'sample', 'service', 'about'];
@@ -18,6 +18,15 @@ const link = ['disco', 'sample', 'service', 'about'];
 export const TopBar = () => {
 
     const {mode, setMode} = useColorScheme();
+
+    const returnTheme = (e: ChangeEvent<HTMLInputElement>) => {
+        return e.target.checked ? "dark" : "light"
+    }
+
+    const handleSetTheme = (e:  ChangeEvent<HTMLInputElement>) => {
+        setMode(returnTheme(e))
+    }
+
     if (!mode) {
         return null;
     }
@@ -61,7 +70,7 @@ export const TopBar = () => {
                             </Box>
                         </Grid2>
                         <Grid2>
-                            <FormControlLabel control={<Switch onChange={(e) => e.target.checked ? setMode("dark") : setMode("light")}/>} label="Theme"/>
+                            <FormControlLabel control={<Switch onChange={(e) => handleSetTheme(e)} checked={mode === "dark"}/>} label="Theme"/>
                         </Grid2>
                     </Toolbar>
                 </Container>
