@@ -8,7 +8,6 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import {Grid2, Switch} from "@mui/material";
 import {useColorScheme} from '@mui/material/styles';
-import {Outlet} from "react-router";
 import {ChangeEvent} from "react";
 
 interface LinkAndLabelType {
