@@ -5,7 +5,7 @@ import {cardServices, processList} from "./const.ts";
 export const ServicePage = () => {
     const theme = useTheme()
     return (
-        <Box>
+        <Box marginBottom={12}>
             <Grid2
                 padding={10}
                 textAlign="center"
