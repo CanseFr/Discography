@@ -1,23 +1,18 @@
-import {Avatar, Grid2} from "@mui/material";
-import AppBar from "@mui/material/AppBar";
-import Container from "@mui/material/Container";
+import {Avatar, Grid2, useTheme} from "@mui/material";
 import Button from "@mui/material/Button";
 import {socialList} from "./const.ts";
 
 export const Footer = () => {
+    const theme = useTheme();
     return (
-        <AppBar position="static" sx={{bottom: "footer"}}>
-            <Container maxWidth="xl">
-                <Grid2 mb={0} container padding={3} spacing={2} justifyContent="center" alignItems="center">
-                    {socialList.map((social) => (
-                        <Grid2>
-                            <Button href={social.link} target="_blank">
-                                <Avatar src={social.pic}/>
-                            </Button>
-                        </Grid2>
-                    ))}
+        <Grid2 container p={3} justifyContent="center" spacing={1} bgcolor={theme.palette.background.paper} style={{bottom: 0, left: 0, width: "100%"}}>
+            {socialList.map((social) => (
+                <Grid2 key={social.pic}>
+                    <Button href={social.link} target="_blank">
+                        <Avatar src={social.pic}/>
+                    </Button>
                 </Grid2>
-            </Container>
-        </AppBar>
+            ))}
+        </Grid2>
     )
 }

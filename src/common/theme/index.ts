@@ -1,20 +1,45 @@
 import {createTheme} from "@mui/material";
-import { lime } from '@mui/material/colors';
+
+export const ternary = '#d2deae'
+export const primary = '#151515'
+export const secondary = '#000000'
 
 export const theme = createTheme({
     colorSchemes: {
-        dark: true,
-    },
-    palette:{
-        primary: {
-            main: lime[500]
-        }
+        // DARK
+        dark: {
+            palette: {
+                background: {
+                    default: primary,
+                    paper: secondary,
+                },
+                primary: {
+                    main: ternary,
+                    dark: secondary
+                }
+            }
+        },
+        // LIGHT
+        light: {
+            palette: {
+                background: {
+                    default: '#ffffff',
+                    paper: ternary,
+                },
+                primary: {
+                    main: primary,
+                    dark: ternary
+
+                }
+            },
+        },
     },
     components: {
         MuiTypography: {
             defaultProps: {
-                fontFamily: 'jmh'
-            }
+                fontFamily: 'jmh',
+            },
+
         },
     }
 });

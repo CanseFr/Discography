@@ -1,11 +1,9 @@
-import {Grid2, useTheme} from "@mui/material";
+import {Grid2} from "@mui/material";
 
 export const Home = () => {
-    const theme = useTheme()
 
     return (
-        <Grid2 height="80vh" bgcolor={theme.palette.background.default}
-        >
+        <Grid2 height="80vh">
             <p>Home page</p>
         </Grid2>
     )
