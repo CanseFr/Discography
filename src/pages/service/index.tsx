@@ -8,7 +8,7 @@ export const ServicePage = () => {
     return (
         <Box marginBottom={12}>
             <Grid2
-                padding={10}
+                padding={30}
                 textAlign="center"
                 bgcolor={theme.palette.background.default}
             >
@@ -26,7 +26,7 @@ export const ServicePage = () => {
                 </Container>
             </Grid2>
 
-            <Grid2 paddingTop={10} paddingBottom={10} bgcolor={theme.palette.primary.main}>
+            <Grid2 paddingTop={30} paddingBottom={30} bgcolor={theme.palette.primary.main}>
                 <Typography variant="h4" align="center" paddingBottom={10} fontFamily="lostar" color="primary.dark">
                     Services
                 </Typography>
@@ -45,16 +45,16 @@ export const ServicePage = () => {
                 </Grid2>
             </Grid2>
 
-            <Grid2 bgcolor={theme.palette.background.default}>
+            <Grid2 bgcolor={theme.palette.background.default} paddingTop={30} paddingBottom={30}>
                 <CustomizedSteppers/>
             </Grid2>
 
             <Box
-                padding="2rem 0"
+                paddingTop={30} paddingBottom={30}
                 textAlign="center"
                 bgcolor={theme.palette.primary.main}
             >
-                <Container maxWidth="sm">
+                <Container maxWidth="sm" >
                     <Typography variant="h2" gutterBottom fontFamily="high" color="primary.dark">
                         Ready to Get Started?
                     </Typography>
