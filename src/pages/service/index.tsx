@@ -1,5 +1,6 @@
 import {Box, Button, Card, CardContent, CardMedia, Container, Grid2, Typography, useTheme,} from "@mui/material";
-import {cardServices, processList} from "./const.ts";
+import {cardServices} from "./const.ts";
+import CustomizedSteppers from "../../components/stepper";
 
 
 export const ServicePage = () => {
@@ -44,21 +45,8 @@ export const ServicePage = () => {
                 </Grid2>
             </Grid2>
 
-            <Grid2 padding={10} bgcolor={theme.palette.background.default}>
-                <Typography variant="h4" paddingBottom={5} align="center" fontFamily="lostar" color="primary">
-                    Process
-                </Typography>
-
-                {processList.map(({label, desc}) => (
-                    <Grid2 textAlign="center" padding={1}>
-                        <Typography variant="h5" gutterBottom color="primary">
-                            {label}
-                        </Typography>
-                        <Typography variant="body2" color="primary">
-                            {desc}
-                        </Typography>
-                    </Grid2>
-                ))}
+            <Grid2 bgcolor={theme.palette.background.default}>
+                <CustomizedSteppers/>
             </Grid2>
 
             <Box
