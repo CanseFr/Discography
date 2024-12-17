@@ -1,10 +1,21 @@
-import {Grid2} from "@mui/material";
+import Box from "@mui/material/Box";
+import {TopBar} from "../../components/top-bar";
 
 export const Home = () => {
 
     return (
-        <Grid2 height="80vh">
-            <p>Home page</p>
-        </Grid2>
+        <>
+            <TopBar/>
+            <Box
+                sx={{
+                    height: "92vh",
+                    backgroundImage: "url(pictures/home/home-bg.jpg)",
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    backgroundRepeat: "no-repeat",
+                }}
+            >
+            </Box>
+        </>
     )
 }
