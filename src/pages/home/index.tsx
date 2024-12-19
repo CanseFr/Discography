@@ -10,7 +10,7 @@ export const Home = () => {
             <Box
                 sx={{
                     height: "92vh",
-                    backgroundImage: defineDependingTheme("url(pictures/home/home-bg.jpg)", "url(pictures/home/bg-home-light.jpg)"),
+                    backgroundImage: defineDependingTheme("url(pictures/home/bg-home-dark.png)", "url(pictures/home/bg-home-light.jpg)"),
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                     backgroundRepeat: "no-repeat",
