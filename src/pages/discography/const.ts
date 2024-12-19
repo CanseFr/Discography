@@ -1,4 +1,7 @@
-export const discographyLinks = [
+import {LinksProps} from "../../components/bandcamp-card/type.ts";
+
+
+export const discographyLinks: LinksProps[] = [
     {
         src: "https://bandcamp.com/EmbeddedPlayer",
         href: "https://canse.bandcamp.com/album/still-pushing-the-vibes",
@@ -115,8 +118,3 @@ export const discographyLinks = [
     },
 ];
 
-export const size = "/size=large"
-export const bgcol = `/bgcol=${localStorage.getItem("mui-mode") === "dark" ? 333333 : "ffffff"}` // 333333
-export const linkcol = `/linkcol=${localStorage.getItem("mui-mode") === "dark" ? "2ebd35" : 333333}`
-export const tracklist = "/tracklist=false"
-export const transparent = "/transparent=true"

@@ -1,10 +1,4 @@
-import Typography from "@mui/material/Typography";
-import {Grid2} from "@mui/material";
+import {samplePacks} from "./const.ts";
+import {DisplayBandcampCard} from "../../components/bandcamp-card";
 
-export const SamplePackPage = () => {
-    return (
-        <Grid2 textAlign="center" paddingTop={50}>
-            <Typography variant="h3" fontWeight={800}>No sample pack for the moment.</Typography>
-        </Grid2>
-    )
-}
+export const SamplePackPage = () => <DisplayBandcampCard list={samplePacks}/>
