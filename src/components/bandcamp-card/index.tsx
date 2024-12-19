@@ -1,9 +1,10 @@
 import {Grid2, useTheme} from "@mui/material";
 import {DisplayBandcampCardProps} from "./type.ts";
+import {defineDependingTheme} from "../../common/tool";
 
 const size = "/size=large"
-const bgcol = `/bgcol=${localStorage.getItem("mui-mode") === "dark" ? 333333 : "ffffff"}` // 333333
-const linkcol = `/linkcol=${localStorage.getItem("mui-mode") === "dark" ? "2ebd35" : 333333}`
+const bgcol = `/bgcol=${defineDependingTheme(333333, "ffffff")}`
+const linkcol = `/linkcol=${defineDependingTheme("2ebd35", 333333)}`
 const tracklist = "/tracklist=false"
 const transparent = "/transparent=true"
 

@@ -7,6 +7,7 @@ import Button from '@mui/material/Button';
 import {Grid2, Switch, useTheme} from "@mui/material";
 import {useColorScheme} from '@mui/material/styles';
 import {ChangeEvent} from "react";
+import {reloadPageToRefreshTheme} from "../../common/tool";
 
 interface LinkAndLabelType {
     label: string;
@@ -32,9 +33,7 @@ export const TopBar = () => {
 
     const handleSetTheme = (e: ChangeEvent<HTMLInputElement>) => {
         setMode(returnTheme(e))
-        if (window.location.pathname === "/disco") {
-            window.location.reload();
-        }
+        reloadPageToRefreshTheme()
     }
 
     if (!mode) {

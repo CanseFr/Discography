@@ -1,5 +1,6 @@
 import Box from "@mui/material/Box";
 import {TopBar} from "../../components/top-bar";
+import {defineDependingTheme} from "../../common/tool";
 
 export const Home = () => {
 
@@ -9,7 +10,7 @@ export const Home = () => {
             <Box
                 sx={{
                     height: "92vh",
-                    backgroundImage: "url(pictures/home/home-bg.jpg)",
+                    backgroundImage: defineDependingTheme("url(pictures/home/home-bg.jpg)", "url(pictures/home/bg-home-light.jpg)"),
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                     backgroundRepeat: "no-repeat",
